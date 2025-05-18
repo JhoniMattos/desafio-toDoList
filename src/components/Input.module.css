@@ -1,0 +1,42 @@
+.input {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+
+  margin-top: -1.8rem;
+}
+
+.input input {
+  background: var(--gray-500);
+  color: var(--gray-100);
+  width: 40rem;
+  height: 3.5rem;
+  border-radius: 8px;
+  border: none;
+
+  padding: 1rem;
+}
+
+.input input::placeholder {
+  line-height: 1.6;
+}
+
+.input button {
+  display: flex;
+  align-items: center;
+  background: var(--blue-500);
+  color: var(--gray-100);
+  font-weight: 600;
+  padding: 1rem;
+  border: none;
+  border-radius: 8px;
+  gap: 0.5rem;
+
+  cursor: pointer;
+
+  transition: background-color 0.1s;
+}
+
+.input button:hover {
+  background: var(--blue-100);
+}

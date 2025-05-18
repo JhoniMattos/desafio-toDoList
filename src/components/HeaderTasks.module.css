@@ -1,0 +1,44 @@
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 4rem;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 46rem;
+  margin-bottom: 1.5rem;
+}
+
+.createTasks {
+  display: flex;
+  font-weight: 600;
+  align-items: center;
+}
+
+.createTasks p {
+  color: var(--blue-100);
+}
+
+.completedTasks {
+  display: flex;
+  font-weight: 600;
+  align-items: center;
+}
+
+.completedTasks p {
+  color: var(--purple-500);
+}
+
+.createTasks span,
+.completedTasks span {
+  padding: 4px 8px;
+  background: var(--gray-400);
+  color: var(--gray-100);
+  border-radius: 0.8rem;
+  font-weight: bold;
+}
