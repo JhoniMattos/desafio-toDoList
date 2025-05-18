@@ -7,6 +7,7 @@ import { HeaderTasks } from "./components/HeaderTasks";
 
 import "./global.css";
 import styles from "./App.module.css";
+import { ContentEmpty } from "./components/ContentEmpty copy";
 
 export function App() {
   const [tasks, setTasks] = useState([]);
@@ -40,20 +41,22 @@ export function App() {
       <Header />
       <main>
         <Input onAddTask={handleAddTask} />
-
         <HeaderTasks total={totalTasks} completed={completedTasks} />
-
-        <ol className={styles.tasks}>
-          {tasks.map((task) => (
-            <Task
-              key={task.id}
-              content={task.text}
-              isCompleted={task.isCompleted}
-              onToggle={() => handleToggleTask(task.id)}
-              onDelete={() => handleDeleteTask(task.id)}
-            />
-          ))}
-        </ol>
+        {tasks.length === 0 ? (
+          <ContentEmpty />
+        ) : (
+          <ol className={styles.tasks}>
+            {tasks.map((task) => (
+              <Task
+                key={task.id}
+                content={task.text}
+                isCompleted={task.isCompleted}
+                onToggle={() => handleToggleTask(task.id)}
+                onDelete={() => handleDeleteTask(task.id)}
+              />
+            ))}
+          </ol>
+        )}
       </main>
     </div>
   );
