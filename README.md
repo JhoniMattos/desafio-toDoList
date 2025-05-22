@@ -27,5 +27,5 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 
 ToDo List
 
-- [Acesse o projeto finalizado, online]().
+- [Acesse o projeto finalizado, online](https://jhonimattos.github.io/desafio-toDoList/).
 
